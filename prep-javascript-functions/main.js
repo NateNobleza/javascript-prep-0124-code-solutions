@@ -53,11 +53,11 @@ console.log(getCircleCircumfrenceResult);
 
 
 function getFullName(firstName, lastName){
-const fullName = firstName + lastName;
+const fullName = firstName + ' ' + lastName;
   return fullName;
 }
-var fullName = 'Nathaniel Nobleza';
-console.log(fullName);
+ var getFullNameResult = getFullName('Nathaniel', 'Nobleza')
+console.log(getFullNameResult);
 
 
 function cube(number){
