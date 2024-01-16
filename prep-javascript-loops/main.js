@@ -42,33 +42,33 @@ console.log('time till explosion!', round)
 console.log(forLoop2())
 
 
-function forInLoop1(object){
-  const aboutMe = ['name', 'age', 'hobby', 'invention']
-  let characteristics = {
+  let characteristics ={
     name: 'Nathaniel Nobleza',
     age: '28',
     hobby: 'keyboards',
     invention: 'guac'
   }
-  for (let x in aboutMe){
-  aboutMe.push(characteristics)
+function forInLoop1(object){
+  const aboutMe = []
+  for (let x in characteristics){
+  aboutMe.push(x)
   }
   return characteristics
 }
 console.log('aboutMe', forInLoop1())
 
 
-function forInLoop2(object){
-
-  const genetics = ['eye', 'skin', 'hair', 'origin']
-  let characteristics = {
+ let genes = {
     eye: 'brown',
     skin: 'tan',
     hair: 'black',
     origin: 'Phillippines'
   }
-for (let x in genetics){
-genetics.push(characteristics)
+function forInLoop2(object){
+  const genetics = []
+
+for (let x in object){
+genetics.push(x)
 }
 return characteristics
 }
