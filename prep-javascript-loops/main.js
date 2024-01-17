@@ -70,6 +70,6 @@ function forInLoop2(object){
 for (let x in object){
 genetics.push(x)
 }
-return characteristics
+return genes
 }
 console.log('genetics', forInLoop2())
