@@ -50,12 +50,12 @@ console.log(forLoop2())
   }
 function forInLoop1(object){
   const aboutMe = []
-  for (let x in characteristics){
+  for (let x in object){
   aboutMe.push(x)
   }
-  return characteristics
+  return aboutMe
 }
-console.log('aboutMe', forInLoop1())
+console.log(forInLoop1(characteristics))
 
 
  let genes = {
@@ -66,10 +66,9 @@ console.log('aboutMe', forInLoop1())
   }
 function forInLoop2(object){
   const genetics = []
-
 for (let x in object){
 genetics.push(x)
 }
-return genes
+return genetics
 }
-console.log('genetics', forInLoop2())
+console.log(forInLoop2(genes))
